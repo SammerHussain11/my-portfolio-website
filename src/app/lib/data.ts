@@ -34,7 +34,7 @@ export const projects = [
     tags: ["Node.js", "React", "MongoDB", "Stripe", "RAG", "GPT-4o"],
     imageUrl: "project-fredcoach",
     githubUrl: "https://github.com/SammerHussain11/fredcoach.git",
-    liveUrl: "#",
+    demoVideoUrl: "/assets/videos/fredcoach-project-demo.mp4",
   },
   {
     id: "plagiarism-detection",
@@ -44,7 +44,7 @@ export const projects = [
     tags: ["Python", "Flask", "React", "NLP", "TF-IDF", "RoBERTa"],
     imageUrl: "project-plagiarism",
     githubUrl: "https://github.com/SammerHussain11/final-year-project.git",
-    liveUrl: "#",
+    demoVideoUrl: "/assets/videos/content-examiner-demo.mp4",
   },
   {
     id: "object-detection",
@@ -55,7 +55,7 @@ export const projects = [
     imageUrl: "project-object-detection",
     githubUrl:
       "https://github.com/SammerHussain11/live-object-detection-with-yolov8.git",
-    liveUrl: "#",
+    demoVideoUrl: "/assets/videos/lod-project-demo.mp4",
   },
 ];
 
