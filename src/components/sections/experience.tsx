@@ -50,7 +50,7 @@ export default function Experience() {
                   <ul className="mt-4 space-y-2">
                     {exp.responsibilities.map((resp, i) => (
                       <li key={i} className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-accent-foreground mt-1 flex-shrink-0" />
+                        <CheckCircle2 className="h-4 w-4 text-accent-foreground dark:text-white mt-1 flex-shrink-0" />
                         <span className="text-sm text-muted-foreground">
                           {resp}
                         </span>

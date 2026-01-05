@@ -39,6 +39,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     "project-fredcoach": "/assets/fredcoach-project-pic.png",
     "project-plagiarism": "/assets/content-examiner-project-pic.png",
     "project-object-detection": "/assets/live-object-detection-pic.png",
+    "project-doc-ingestion": "/assets/screenshot-1.png",
+    "project-linkedin-outreach": "/assets/screenshot-2.png",
+    "project-maps-leads": "/assets/screenshot-3.png",
   };
 
   const assetImage = assetImageMap[project.imageUrl];

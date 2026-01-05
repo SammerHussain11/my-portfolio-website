@@ -8,7 +8,6 @@ import { MoveRight } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 export default function Hero() {
-  const profileImageUrl = profilePic as string;
   const { ref, isInView } = useScrollAnimation({ threshold: 0.2 });
 
   return (
@@ -53,7 +52,7 @@ export default function Hero() {
         </div>
         <div className="relative mx-auto w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 order-1 md:order-2">
           <Image
-            src={profileImageUrl}
+            src={profilePic}
             alt={`${portfolioData.name} profile`}
             width={400}
             height={400}

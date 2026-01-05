@@ -77,7 +77,7 @@ export default function Skills({ selectedSkill, onSkillSelect }: SkillsProps) {
                       alt={`${skill.name} logo`}
                       width={40}
                       height={40}
-                      className="object-contain"
+                      className="object-contain filter dark:invert dark:brightness-200"
                     />
                   </div>
                 )}
