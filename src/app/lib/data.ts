@@ -15,13 +15,13 @@ import {
 
 export const portfolioData = {
   name: "Sammer Hussain",
-  title: "AI & Automation Engineer",
+  title: "AI Automation Engineer",
   location: "Karachi, Pakistan",
   email: "sammer.hussain1121@gmail.com",
   linkedin: "https://www.linkedin.com/in/sammer-hussain/",
   github: "https://github.com/SammerHussain11",
   summary:
-    "AI and Automation Engineer specializing in building production-grade AI systems using LLMs, vector databases, and workflow orchestration. Experienced in designing end-to-end Generative AI and automation pipelines that transform unstructured data and manual processes into scalable, intelligent solutions. Proficient in developing real-world GenAI products including AI coaching platforms, RAG architectures, and business automation workflows using n8n, LangChain, and modern AI frameworks.",
+    "As an AI Automation Engineer, I design and build production-grade Generative AI systems, RAG architectures, and intelligent automation workflows. I have hands-on experience delivering full-stack AI products, including AI coaching platforms and AI-powered plagiarism detection systems, as well as scalable document ingestion pipelines using LLMs, vector databases, and workflow orchestration. I focus on transforming unstructured data and manual processes into deployable, real-world AI solutions.",
   topSkills: ["Python", "LangChain", "RAG", "ChromaDB", "Node JS"],
 };
 
