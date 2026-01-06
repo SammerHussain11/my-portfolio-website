@@ -21,7 +21,7 @@ export const portfolioData = {
   linkedin: "https://www.linkedin.com/in/sammer-hussain/",
   github: "https://github.com/SammerHussain11",
   summary:
-    "As an AI Automation Engineer, I design and build production-grade Generative AI systems, RAG architectures, and intelligent automation workflows. I have hands-on experience delivering full-stack AI products, including AI coaching platforms and AI-powered plagiarism detection systems, as well as scalable document ingestion pipelines using LLMs, vector databases, and workflow orchestration. I focus on transforming unstructured data and manual processes into deployable, real-world AI solutions.",
+    "AI Automation Engineer with hands-on experience building production-ready Generative AI and automation systems. Skilled in developing RAG-based applications, AI-powered products, and end-to-end automation workflows using n8n. Experienced in integrating LLMs, vector databases, and cloud tools to automate document processing, lead enrichment, and intelligent data pipelines. Focused on turning unstructured data and manual processes into scalable, reliable AI-driven solutions.",
   topSkills: ["Python", "LangChain", "RAG", "ChromaDB", "Node JS"],
 };
 
