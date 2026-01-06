@@ -216,7 +216,12 @@ export const skills = [
     icon: "huggingface",
     logo: "/logos/hugging-face.svg",
   },
-  { name: "LLaMA", proficiency: 75, icon: "llama", logo: "/logos/llama.svg" },
+  {
+    name: "Model Fine Tuning",
+    proficiency: 75,
+    icon: "llama",
+    logo: "/logos/fine-tuning.png",
+  },
   {
     name: "OpenAI",
     proficiency: 90,
