@@ -20,13 +20,8 @@ export const portfolioData = {
   email: "sammer.hussain1121@gmail.com",
   linkedin: "https://www.linkedin.com/in/sammer-hussain/",
   github: "https://github.com/SammerHussain11",
-  summary: `I’m a Full-Stack AI Engineer with a B.S. in Information Technology from Quaid-e-Awam University of Engineering, Science & Technology, with hands-on experience building and deploying real-world AI solutions. I specialize in Generative AI, intelligent automation, and end-to-end AI systems, transforming unstructured data and manual processes into scalable, reliable, and business-ready pipelines.
-
-My expertise includes RAG architectures, LLM integrations (OpenAI GPT-4o, Google Gemini), vector databases (ChromaDB, Pinecone), and workflow automation using LangChain and n8n. I design solutions that span backend APIs, cloud integration, and interactive frontends, enabling AI applications that are both robust and user-friendly.
-
-I’m passionate about building automation-first, scalable AI architectures that leverage modern AI technologies to deliver real-world impact. I enjoy solving complex problems, optimizing workflows, and creating AI systems that make processes smarter, faster, and more reliable.
-
-I am currently open to opportunities as a Full-Stack AI Engineer, AI Automation Engineer, or Generative AI Engineer and available immediately to help organizations deploy cutting-edge AI solutions.`,
+  summary:
+    "Full-Stack AI Engineer focused on building production-ready generative AI and automation systems. I design and deliver end-to-end solutions that include data ingestion, embeddings, vector search (RAG), backend APIs, cloud integration, and polished user interfaces.\n\nTechnical expertise: Retrieval-Augmented Generation (RAG), LLM integrations (OpenAI GPT-4o, Google Gemini), vector databases (ChromaDB, Pinecone), LangChain, and workflow automation using n8n.\n\nI prioritize scalable, modular architectures and reproducible pipelines that transform unstructured data and manual processes into reliable, business-ready systems. I enjoy solving complex problems, optimizing workflows, and collaborating with cross-functional teams to deliver measurable impact.\n\nOpen to roles in Full-Stack AI Engineer, AI Automation, and Generative AI.",
   topSkills: ["Python", "LangChain", "RAG", "ChromaDB", "Node JS"],
 };
 
@@ -83,7 +78,7 @@ export const projects = [
   },
   {
     id: "doc-ingestion-vectorization",
-    title: "VoxMind AI – RAG-Based Voice Agent",
+    title: "VoxMind AI: RAG-Based Voice Agent",
     summary:
       "End-to-end voice and text AI agent using RAG with long-term memory. Automated document ingestion from Google Drive, embedding with Google Gemini, and indexing in Pinecone for semantic search. Scalable n8n workflow enabling context-aware, grounded AI responses via LLM integration.",
     tags: [

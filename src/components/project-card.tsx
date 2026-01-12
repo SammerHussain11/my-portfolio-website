@@ -40,6 +40,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     "project-plagiarism": "/assets/content-examiner-project-pic.png",
     "project-object-detection": "/assets/live-object-detection-pic.png",
     "project-doc-ingestion": "/assets/screenshot-1.png",
+    "project-voxmind": "/assets/screenshot-1.png",
     "project-linkedin-outreach": "/assets/screenshot-2.png",
     "project-maps-leads": "/assets/screenshot-3.png",
   };
@@ -47,6 +48,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const assetImage = assetImageMap[project.imageUrl];
   const projectImage = PlaceHolderImages.find((p) => p.id === project.imageUrl);
   const imageToUse = assetImage || projectImage;
+  const shouldContain = Boolean(
+    assetImage && assetImage.includes("screenshot")
+  );
+  const imgClass = `w-full h-full ${
+    shouldContain ? "object-contain bg-gray-100" : "object-cover"
+  }`;
 
   return (
     <>
@@ -58,7 +65,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               alt={project.title}
               width={600}
               height={400}
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              className={`${imgClass} transition-transform duration-300 group-hover:scale-105`}
               data-ai-hint={projectImage?.imageHint}
             />
           </div>
