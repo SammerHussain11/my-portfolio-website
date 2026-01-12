@@ -15,13 +15,18 @@ import {
 
 export const portfolioData = {
   name: "Sammer Hussain",
-  title: "AI Automation Engineer",
+  title: "Full-Stack AI Engineer",
   location: "Karachi, Pakistan",
   email: "sammer.hussain1121@gmail.com",
   linkedin: "https://www.linkedin.com/in/sammer-hussain/",
   github: "https://github.com/SammerHussain11",
-  summary:
-    "AI Automation Engineer with hands-on experience building production-ready Generative AI and automation systems. Skilled in developing RAG-based applications, AI-powered products, and end-to-end automation workflows using n8n. Experienced in integrating LLMs, vector databases, and cloud tools to automate document processing, lead enrichment, and intelligent data pipelines. Focused on turning unstructured data and manual processes into scalable, reliable AI-driven solutions.",
+  summary: `I’m a Full-Stack AI Engineer with a B.S. in Information Technology from Quaid-e-Awam University of Engineering, Science & Technology, with hands-on experience building and deploying real-world AI solutions. I specialize in Generative AI, intelligent automation, and end-to-end AI systems, transforming unstructured data and manual processes into scalable, reliable, and business-ready pipelines.
+
+My expertise includes RAG architectures, LLM integrations (OpenAI GPT-4o, Google Gemini), vector databases (ChromaDB, Pinecone), and workflow automation using LangChain and n8n. I design solutions that span backend APIs, cloud integration, and interactive frontends, enabling AI applications that are both robust and user-friendly.
+
+I’m passionate about building automation-first, scalable AI architectures that leverage modern AI technologies to deliver real-world impact. I enjoy solving complex problems, optimizing workflows, and creating AI systems that make processes smarter, faster, and more reliable.
+
+I am currently open to opportunities as a Full-Stack AI Engineer, AI Automation Engineer, or Generative AI Engineer and available immediately to help organizations deploy cutting-edge AI solutions.`,
   topSkills: ["Python", "LangChain", "RAG", "ChromaDB", "Node JS"],
 };
 
@@ -78,13 +83,21 @@ export const projects = [
   },
   {
     id: "doc-ingestion-vectorization",
-    title: "Document Ingestion and Vectorization Pipeline",
+    title: "VoxMind AI – RAG-Based Voice Agent",
     summary:
-      "Document ingestion and vectorization pipeline using n8n, Google Gemini, and Pinecone. End-to-end n8n workflow fetching files from Google Drive, embedding with Google Gemini, and indexing in Pinecone for semantic search and RAG applications. Scalable automation integrating LLMs, vector stores, and cloud storage.",
-    tags: ["n8n", "Google Gemini", "Pinecone", "RAG", "ChromaDB", "Automation"],
-    imageUrl: "project-doc-ingestion",
+      "End-to-end voice and text AI agent using RAG with long-term memory. Automated document ingestion from Google Drive, embedding with Google Gemini, and indexing in Pinecone for semantic search. Scalable n8n workflow enabling context-aware, grounded AI responses via LLM integration.",
+    tags: [
+      "n8n",
+      "Google Gemini",
+      "Pinecone",
+      "LangChain",
+      "Google Drive API",
+      "RAG",
+      "Voice Agent",
+    ],
+    imageUrl: "project-voxmind",
     githubUrl:
-      "https://github.com/SammerHussain11/ai-automation-n8n/tree/f22af745d89fad3f2df5d0cf473722b8ed8c9fdb/workflows/%20document-ingestion-%26-vectorization-pipeline-(google-drive-pinecone)",
+      "https://github.com/SammerHussain11/ai-automation-n8n/tree/4f58f1b2ace29ac22be2ce3b8416617cabd99160/workflows/end-to-end-voice-ai-agent-(knowledge-ingestion-inversational-rag)",
   },
   {
     id: "linkedin-lead-outreach",
