@@ -320,8 +320,8 @@ export const education = {
 
 export const certifications = [
   {
-    name: "Google Prompting Essentials",
-    issuer: "Google",
+    name: "Secure Full MEAN Stack Developer",
+    issuer: "EC-Council",
     id: "GPE-123",
     icon: Award,
   },
