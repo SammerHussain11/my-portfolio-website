@@ -36,8 +36,8 @@ export default function Experience() {
               <div className="absolute -left-[2px] top-0 h-full w-0.5 bg-primary"></div>
               {experiences.map((exp, index) => {
                 const companyLogos: Record<string, string> = {
-                  Decotechs: "/logos/decotechs.jfif",
-                  "CoreTech Innovations": "/logos/coretech-innovation.jfif",
+                  Decotechs: "/logos/decotechs.png",
+                  "CoreTech Innovations": "/logos/coretech-innovation.png",
                 };
                 const companyLogo = companyLogos[exp.company];
 
