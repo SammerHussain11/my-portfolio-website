@@ -32,7 +32,7 @@ export default function Header() {
         onClick={closeMobileMenu}
         className={cn(
           "text-sm font-medium text-foreground/80 transition-colors hover:text-primary",
-          className
+          className,
         )}
       >
         {link.label}
@@ -47,7 +47,7 @@ export default function Header() {
         "sticky top-0 z-50 w-full transition-all duration-300",
         isScrolled
           ? "border-b bg-background/80 backdrop-blur-sm"
-          : "bg-background"
+          : "bg-background",
       )}
     >
       <div className="container flex h-16 items-center">

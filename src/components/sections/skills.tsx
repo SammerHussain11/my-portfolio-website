@@ -66,7 +66,7 @@ export default function Skills({ selectedSkill, onSkillSelect }: SkillsProps) {
                 }`}
                 onClick={() =>
                   onSkillSelect(
-                    skill.name === selectedSkill ? null : skill.name
+                    skill.name === selectedSkill ? null : skill.name,
                   )
                 }
               >

@@ -15,13 +15,14 @@ import {
 
 export const portfolioData = {
   name: "Sammer Hussain",
-  title: "Full-Stack AI Engineer",
-  location: "Karachi, Pakistan",
+  title: "Junior Software Engineer | AI & Full Stack Specialist",
+  location: "Karachi, Sindh, Pakistan",
+  phone: "+92-307-3461499",
   email: "sammer.hussain1121@gmail.com",
   linkedin: "https://www.linkedin.com/in/sammer-hussain/",
   github: "https://github.com/SammerHussain11",
-  summary:
-    "Full-Stack AI Engineer focused on building production-ready generative AI and automation systems. I design and deliver end-to-end solutions that include data ingestion, embeddings, vector search (RAG), backend APIs, cloud integration, and polished user interfaces.\n\nTechnical expertise: Retrieval-Augmented Generation (RAG), LLM integrations (OpenAI GPT-4o, Google Gemini), vector databases (ChromaDB, Pinecone), LangChain, and workflow automation using n8n.\n\nI prioritize scalable, modular architectures and reproducible pipelines that transform unstructured data and manual processes into reliable, business-ready systems. I enjoy solving complex problems, optimizing workflows, and collaborating with cross-functional teams to deliver measurable impact.\n\nOpen to roles in Full-Stack AI Engineer, AI Automation, and Generative AI.",
+  portfolio: "https://sammer-hussain-portfolio.vercel.app",
+  summary: `Junior Software Engineer with hands-on experience building production-ready AI systems and SaaS products end to end. Specialized in Generative AI, LLM-powered applications, RAG pipelines, and workflow automation. Strong background in designing scalable backends, modern frontends, and intelligent automation using Python, Flask, Node.js, React, Streamlit, LangChain, vector databases, and n8n. Proven ability to convert unstructured data and manual processes into reliable, scalable AI-driven solutions.`,
   topSkills: ["Python", "LangChain", "RAG", "ChromaDB", "Node JS"],
 };
 
@@ -77,6 +78,27 @@ export const projects = [
     demoVideoUrl: "/assets/videos/lod-project-demo.mp4",
   },
   {
+    id: "resume-job-matching",
+    title: "AI Powered Resume-Based Job Matching Portal",
+    summary:
+      "Multi-service AI platform for semantic resume-job matching. Built a multi-service platform with React, Node.js, Express, MongoDB and a FastAPI AI microservice for resume parsing using Sentence Transformers. Engineered a weighted match-scoring algorithm combining experience overlap (50%), skill similarity (30%), and Pinecone cosine similarity (20%). Configured JWT-based authentication with RBAC for user and admin workflows, including application tracking and lifecycle management.",
+    tags: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "FastAPI",
+      "Sentence Transformers",
+      "Pinecone",
+      "JWT",
+    ],
+    imageUrl: "project-resume-matching",
+    githubUrl:
+      "https://github.com/SammerHussain11/ai-powered-resume-based-job-matching-portal.git",
+    demoVideoUrl:
+      "https://drive.google.com/file/d/1JA6gfPKB9FnwsRRrE_sdcevRA9oHY1ss/view?usp=sharing",
+  },
+  {
     id: "doc-ingestion-vectorization",
     title: "VoxMind AI: RAG-Based Voice Agent",
     summary:
@@ -94,16 +116,16 @@ export const projects = [
     githubUrl:
       "https://github.com/SammerHussain11/ai-automation-n8n/tree/4f58f1b2ace29ac22be2ce3b8416617cabd99160/workflows/end-to-end-voice-ai-agent-(knowledge-ingestion-inversational-rag)",
   },
-  {
-    id: "linkedin-lead-outreach",
-    title: "LinkedIn Lead Outreach Automation",
-    summary:
-      "LinkedIn lead outreach automation using n8n, LangChain, Google Gemini, and Google Sheets. AI-driven workflow generating personalized outreach messages from Google Sheets data. Integrated LangChain with Gemini for intelligent message generation based on lead profiles and business context.",
-    tags: ["n8n", "LangChain", "Google Gemini", "Google Sheets", "Automation"],
-    imageUrl: "project-linkedin-outreach",
-    githubUrl:
-      "https://github.com/SammerHussain11/ai-automation-n8n/tree/f22af745d89fad3f2df5d0cf473722b8ed8c9fdb/workflows/ai-powered-linkedIn-lead-outreach-automation",
-  },
+  // {
+  //   id: "linkedin-lead-outreach",
+  //   title: "LinkedIn Lead Outreach Automation",
+  //   summary:
+  //     "LinkedIn lead outreach automation using n8n, LangChain, Google Gemini, and Google Sheets. AI-driven workflow generating personalized outreach messages from Google Sheets data. Integrated LangChain with Gemini for intelligent message generation based on lead profiles and business context.",
+  //   tags: ["n8n", "LangChain", "Google Gemini", "Google Sheets", "Automation"],
+  //   imageUrl: "project-linkedin-outreach",
+  //   githubUrl:
+  //     "https://github.com/SammerHussain11/ai-automation-n8n/tree/f22af745d89fad3f2df5d0cf473722b8ed8c9fdb/workflows/ai-powered-linkedIn-lead-outreach-automation",
+  // },
   {
     id: "google-maps-lead-extraction",
     title: "Google Maps Business Lead Extraction & Enrichment (n8n)",
@@ -142,10 +164,22 @@ export const skills = [
     logo: "/logos/flask.svg",
   },
   {
+    name: "FastAPI",
+    proficiency: 85,
+    icon: "fastapi",
+    logo: "/logos/fastapi.svg",
+  },
+  {
     name: "Node JS",
     proficiency: 85,
     icon: "nodejs",
     logo: "/logos/nodejs.svg",
+  },
+  {
+    name: "Express JS",
+    proficiency: 85,
+    icon: "express",
+    logo: "/logos/express.svg",
   },
   { name: "React", proficiency: 80, icon: "react", logo: "/logos/react.svg" },
   {
@@ -297,44 +331,64 @@ export const skills = [
 
 export const experiences = [
   {
+    company: "Decotechs",
+    role: "Junior Software Engineer (Python AI & Full Stack)",
+    duration: "Feb 2026 - Present",
+    location: "Karachi, Pakistan",
+    icon: Briefcase,
+    responsibilities: [
+      "Architected and deployed LLM-based chatbots and RAG pipelines for scalable knowledge retrieval using Python, OpenAI APIs, and Ollama.",
+      "Engineered RESTful APIs with FastAPI, Node.js, and Express; built interactive frontends with React.js and Streamlit.",
+      "Automated complex business workflows using n8n and built an AI-driven job automation system with Python, Playwright, and Streamlit featuring real-time dashboards and notification pipelines.",
+      "Contributed to a MERN-based medical data entry system (MAR module), delivering new features and optimizing performance for healthcare data management.",
+    ],
+  },
+  {
     company: "CoreTech Innovations",
     role: "AI Engineer Intern",
     duration: "Aug 2025 - Sep 2025",
-    location: "Remote",
+    location: "Hyderabad, Sindh, Pakistan",
     icon: Briefcase,
     responsibilities: [
-      "Engineered machine learning models (sentiment analysis, student marks predictor) using Python, Scikit-learn, and TensorFlow.",
-      "Architected and implemented a smart service platform to enhance internal workflows and productivity.",
-      "Executed data preprocessing, feature engineering, and model evaluation to ensure high accuracy.",
-      "Partnered with cross-functional teams in an Agile environment to ensure timely project delivery.",
-      "Optimized, validated, and deployed models with production-ready techniques.",
-      "Delivered data-driven insights and project outcomes to stakeholders, influencing business decisions.",
+      "Developed ML models for sentiment analysis and student marks prediction using Python, Scikit-learn, and TensorFlow.",
+      "Built a smart service platform to streamline workflows and boost productivity.",
+      "Handled data preprocessing, feature engineering, model evaluation, and optimization for production-ready solutions.",
+      "Collaborated in Agile teams and communicated insights to drive data-informed business decisions.",
     ],
   },
 ];
 export const education = {
-  institution: "Quaid-e-Awam University of Engineering, Science & Technology",
+  institution:
+    "Quaid-e-Awam University of Engineering, Sciences and Technology",
   degree: "B.Sc. in Information Technology",
-  duration: "Dec 2021 - Aug 2025",
+  duration: "Dec 2021 - Dec 2025",
+  cgpa: "3.57 / 4.0",
+  location: "Nawabshah, Pakistan",
 };
 
 export const certifications = [
   {
-    name: "Secure Full MEAN Stack Developer",
-    issuer: "EC-Council",
-    id: "GPE-123",
+    name: "Google AI Essentials",
+    issuer: "Google",
+    id: "GAE-001",
     icon: Award,
   },
   {
     name: "Introduction to Generative AI",
     issuer: "Google",
-    id: "GAI-456",
+    id: "GAI-002",
     icon: Award,
   },
   {
-    name: "Google AI Essentials",
+    name: "Full Stack MEAN Developer",
     issuer: "Google",
-    id: "GAE-789",
+    id: "MEAN-003",
+    icon: Award,
+  },
+  {
+    name: "Google Prompting Essentials",
+    issuer: "Google",
+    id: "GPE-004",
     icon: Award,
   },
 ];

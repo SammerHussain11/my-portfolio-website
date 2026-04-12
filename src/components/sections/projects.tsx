@@ -14,8 +14,8 @@ export default function Projects({ selectedSkill }: ProjectsProps) {
     if (!selectedSkill) return projects;
     return projects.filter((project) =>
       project.tags.some(
-        (tag) => tag.toLowerCase() === selectedSkill.toLowerCase()
-      )
+        (tag) => tag.toLowerCase() === selectedSkill.toLowerCase(),
+      ),
     );
   }, [selectedSkill]);
 

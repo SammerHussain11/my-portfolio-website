@@ -46,7 +46,7 @@ export default function Hero() {
                       {social.name}
                     </a>
                   </Button>
-                )
+                ),
             )}
           </div>
         </div>

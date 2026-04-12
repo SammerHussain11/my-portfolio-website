@@ -43,13 +43,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     "project-voxmind": "/assets/screenshot-1.png",
     "project-linkedin-outreach": "/assets/screenshot-2.png",
     "project-maps-leads": "/assets/screenshot-3.png",
+    "project-resume-matching": "/assets/screenshot-4.png",
   };
 
   const assetImage = assetImageMap[project.imageUrl];
   const projectImage = PlaceHolderImages.find((p) => p.id === project.imageUrl);
   const imageToUse = assetImage || projectImage;
   const shouldContain = Boolean(
-    assetImage && assetImage.includes("screenshot")
+    assetImage && assetImage.includes("screenshot"),
   );
   const imgClass = `w-full h-full ${
     shouldContain ? "object-contain bg-gray-100" : "object-cover"
@@ -110,14 +111,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             size="sm"
             onClick={() => {
               if (project.demoVideoUrl) {
-                setOpen(true);
-              } else {
-                // If you add liveUrl to your projects in the future
-                // window.open(project.liveUrl || "#", "_blank");
-                console.log("No demo video available");
+                // Check if it's an external link (http/https)
+                if (project.demoVideoUrl.startsWith("http")) {
+                  window.open(project.demoVideoUrl, "_blank");
+                } else {
+                  setOpen(true);
+                }
               }
             }}
-            disabled={!project.demoVideoUrl} // Optional: disable if no video
+            disabled={!project.demoVideoUrl}
           >
             <ExternalLink className="mr-2 h-4 w-4" />
             View Demo
