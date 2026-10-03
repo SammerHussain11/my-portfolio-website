@@ -21,11 +21,9 @@ type Project = {
   title: string;
   summary: string;
   tags: string[];
-  imageUrl: string;
-  githubUrl: string;
-  // Remove liveUrl since it doesn't exist in your data
-  // liveUrl: string; // ❌ REMOVE THIS
-  demoVideoUrl?: string; // ✅ This exists in your data
+  imageUrl?: string;
+  githubUrl?: string;
+  demoVideoUrl?: string;
 };
 
 interface ProjectCardProps {
@@ -44,16 +42,21 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     "project-linkedin-outreach": "/assets/screenshot-2.png",
     "project-maps-leads": "/assets/screenshot-3.png",
     "project-resume-matching": "/assets/screenshot-4.png",
+    "project-voice-agent": "/assets/healthcare-ai-voice-agent.png",
   };
 
-  const assetImage = assetImageMap[project.imageUrl];
+  const assetImage = project.imageUrl
+    ? assetImageMap[project.imageUrl]
+    : undefined;
   const projectImage = PlaceHolderImages.find((p) => p.id === project.imageUrl);
   const imageToUse = assetImage || projectImage;
   const shouldContain = Boolean(
     assetImage && assetImage.includes("screenshot"),
   );
+  const imagePosition =
+    project.imageUrl === "project-voice-agent" ? "object-top" : "object-center";
   const imgClass = `w-full h-full ${
-    shouldContain ? "object-contain bg-gray-100" : "object-cover"
+    shouldContain ? "object-contain bg-gray-100" : `object-cover ${imagePosition}`
   }`;
 
   return (
@@ -93,37 +96,35 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </CardContent>
 
         <CardFooter className="flex justify-start gap-2">
-          {/* GitHub Button */}
-          <Button variant="outline" size="sm" asChild>
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Github className="mr-2 h-4 w-4" />
-              GitHub
-            </a>
-          </Button>
+          {project.githubUrl && (
+            <Button variant="outline" size="sm" asChild>
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github className="mr-2 h-4 w-4" />
+                GitHub
+              </a>
+            </Button>
+          )}
 
-          {/* View Demo Button - Fixed logic */}
-          <Button
-            variant="default"
-            size="sm"
-            onClick={() => {
-              if (project.demoVideoUrl) {
-                // Check if it's an external link (http/https)
+          {project.demoVideoUrl && (
+            <Button
+              variant="default"
+              size="sm"
+              onClick={() => {
                 if (project.demoVideoUrl.startsWith("http")) {
                   window.open(project.demoVideoUrl, "_blank");
                 } else {
                   setOpen(true);
                 }
-              }
-            }}
-            disabled={!project.demoVideoUrl}
-          >
-            <ExternalLink className="mr-2 h-4 w-4" />
-            View Demo
-          </Button>
+              }}
+            >
+              <ExternalLink className="mr-2 h-4 w-4" />
+              View Demo
+            </Button>
+          )}
         </CardFooter>
       </Card>
 
