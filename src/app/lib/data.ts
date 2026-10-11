@@ -15,7 +15,7 @@ import {
 
 export const portfolioData = {
   name: "Sammer Hussain",
-  title: "Junior AI Software Engineer",
+  title: "Junior AI Software Engineer | Helping Businesses Automate Workflows with AI | Python, FastAPI, n8n, RAG & AI Agents",
   location: "Karachi, Pakistan",
   phone: "+92 307 3461499",
   email: "sammer.hussain1121@gmail.com",
